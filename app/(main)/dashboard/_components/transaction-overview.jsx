@@ -127,7 +127,7 @@ const DashboardOverview = ({ accounts, transactions }) => {
                         ) : (
                           <ArrowUpRight className="mr-1 h-4 w-4" />
                         )}
-                        ${transaction.amount.toFixed(2)}
+                        Rs.{transaction.amount.toFixed(2)}
                       </div>
                     </div>
                   </div>
@@ -172,7 +172,7 @@ const DashboardOverview = ({ accounts, transactions }) => {
                     ))}
                   </Pie>
                   <Tooltip
-                    formatter={(value) => `$${value.toFixed(2)}`}
+                    formatter={(value) => `Rs.${value.toFixed(2)}`}
                     contentStyle={{
                       backgroundColor: "hsl(var(--popover))",
                       border: "1px solid hsl(var(--border))",
